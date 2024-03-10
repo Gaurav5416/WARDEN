@@ -12,15 +12,21 @@ from zenml.integrations.bentoml.services import BentoMLDeploymentService
 def bentoml_predictor(
     service : BentoMLDeploymentService,
     df:pd.DataFrame,
-    ) -> Tuple[Annotated[np.ndarray, "prediction"],
-               Annotated[pd.DataFrame, "batch_data"],
-               ] :
-    df_ytrue = df["is_fraud"]
+    ) -> Tuple[Annotated[pd.DataFrame, "prepared_data"],
+               Annotated[pd.DataFrame, "filtered_data"],] :
+    
+    
+
+    y_true = df["is_fraud"]
     df.drop(columns ="is_fraud", inplace = True)
     service.start(timeout=60)
     data = df.to_numpy()
     prediction = service.predict("predict_ndarray", data)
-    rich_print(prediction)
-    df["y_true"] = df_ytrue
+    # rich_print(prediction)
+    df["y_true"] = y_true
     df["y_pred"] = prediction
-    return prediction, df
+    filtered_df = df[df['y_pred'] == 1]
+    # Drop the 'prediction' column as it's no longer needed
+    filtered_df = filtered_df.drop(columns=['y_pred', 'y_true'])
+    
+    return df, filtered_df

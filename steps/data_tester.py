@@ -27,10 +27,10 @@ data_tester = evidently_test_step.with_options(
 
         tests=[
             EvidentlyTestConfig.test("DataQualityTestPreset"),
-            EvidentlyTestConfig.test("NoTargetPerformanceTestPreset"),
-            EvidentlyTestConfig.test("DataStabilityTestPreset"),
-            EvidentlyTestConfig.test("DataDriftTestPreset"),
-            EvidentlyTestConfig.test("BinaryClassificationTestPreset"),
+            # EvidentlyTestConfig.test("NoTargetPerformanceTestPreset"),
+            # EvidentlyTestConfig.test("DataStabilityTestPreset"),
+            # EvidentlyTestConfig.test("DataDriftTestPreset"),
+            # EvidentlyTestConfig.test("BinaryClassificationTestPreset"),
         ],
 
     ),

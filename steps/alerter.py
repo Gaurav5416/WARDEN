@@ -13,7 +13,7 @@ def slack_custom_block_step(block_message)  :
                     "elements": [
                         {
                             "type": "text",
-                            "text": f" {block_message}, visit the dashboard for reports and test-suites analysis",
+                            "text": f" 🚨 : {block_message}, visit ZenML dashboard for reports and test-suites analysis",
                         }
                     ]
                 }
@@ -37,7 +37,6 @@ def slack_custom_block_step(block_message)  :
     return SlackAlerterParameters(blocks = my_custom_block)
 
 
-@pipeline
 def warden_slackbot(message : str):
     message_blocks = slack_custom_block_step(message)
     post_message = slack_alerter_post_step(params = message_blocks)

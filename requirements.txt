@@ -1,7 +1,6 @@
 click==8.1.3
 joblib==1.3.1
 lxml==4.9.3
-mlflow
 numpy==1.24.4
 pandas==1.5.3
 Pillow==10.0.0
@@ -18,5 +17,5 @@ seaborn
 plotly
 kaleido
 category_encoders
-zenml
+zenml==0.55.3
 zenml[server]

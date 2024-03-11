@@ -23,7 +23,7 @@ def training_warden():
     batch_1, batch_2 = data_splitter(transformed_df) 
     # sample_data_exporter() # Exports batch_2 for testing purposes
     results_json, results_html = data_tester(reference_dataset = batch_1)
-    # notify_data_testing_results(results_json)
+    notify_data_testing_results(results_json)
     X_train, X_test, y_train, y_test = train_test_splitter(batch_1)  
     model = model_trainer(X_train, y_train)  
            

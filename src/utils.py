@@ -3,7 +3,7 @@ import logging
 import pandas as pd
 from typing_extensions import Annotated
 
-from steps.alerter import warden_slackbot
+# from steps.alerter import warden_slackbot
 
 from zenml import step
 from zenml.client import Client
@@ -93,34 +93,34 @@ def sample_data_exporter() :
         logging.error(f"Error while fetching batch data from previous run")
         raise e
 
-@step(enable_cache=False)
-def notify_data_testing_results(
-    results : Annotated[str, "results"],
-) :
-    """
-    Notifies team about data test results through slackbot
+# @step(enable_cache=False)
+# def notify_data_testing_results(
+#     results : Annotated[str, "results"],
+# ) :
+#     """
+#     Notifies team about data test results through slackbot
 
-    Args :
-    ------
-    None
+#     Args :
+#     ------
+#     None
 
-    Results :
-    ---------
-    None
-    """
+#     Results :
+#     ---------
+#     None
+#     """
     
-    try :
-        # Calculating number of tests passed and failed
-        data = json.loads(results)
-        data_tests = data["tests"]
-        status = [tests['status'] for tests in data_tests]
-        success_count = status.count('SUCCESS')
-        failure_count = status.count('FAILURE')
-        message = f"Data testing finished, Total tests : {success_count+failure_count}, Tests Passed : {success_count} ✔️, Tests Failed : {failure_count} ❌"
-        warden_slackbot(message)
+#     try :
+#         # Calculating number of tests passed and failed
+#         data = json.loads(results)
+#         data_tests = data["tests"]
+#         status = [tests['status'] for tests in data_tests]
+#         success_count = status.count('SUCCESS')
+#         failure_count = status.count('FAILURE')
+#         message = f"Data testing finished, Total tests : {success_count+failure_count}, Tests Passed : {success_count} ✔️, Tests Failed : {failure_count} ❌"
+#         warden_slackbot(message)
     
-    except Exception as e :
+#     except Exception as e :
         
-        logging.error(f"Error while notifying data testing results")
-        raise e
+#         logging.error(f"Error while notifying data testing results")
+#         raise e
     

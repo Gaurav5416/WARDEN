@@ -5,8 +5,8 @@ from typing import TYPE_CHECKING
 
 import bentoml
 import numpy as np
-from bentoml.io import Image, NumpyNdarray
-from PIL.Image import Image as PILImage
+from bentoml.io import NumpyNdarray
+
 
 from configs.deployment_config import MODEL_NAME, SERVICE_NAME
 

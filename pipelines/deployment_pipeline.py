@@ -6,7 +6,6 @@ from zenml.integrations.constants import BENTOML
 docker_settings = DockerSettings(required_integrations = [MLFLOW, BENTOML])
 
 from steps.deployment.model_loader import model_loader
-from zenml.integrations.mlflow.steps import mlflow_model_deployer_step
 from zenml.integrations.bentoml.steps import bentoml_model_deployer_step
 from steps.deployment.bento_builder import bento_builder
 from configs.deployment_config import MODEL_NAME

@@ -1,7 +1,7 @@
 warden
 .env
-.zen/
-mlruns/
-__pycache__/
+.zen
+mlruns
+__pycache__
 data/fraud.csv
 data/sample_batch_data.csv

@@ -1,5 +1,4 @@
 from zenml import pipeline
-from configs.etl_config import table_name
 
 from steps.etl.data_loader import data_loader
 from steps.etl.data_balancer import data_balancer
@@ -16,7 +15,7 @@ from src.utils import notify_data_testing_results, sample_data_exporter
 @pipeline(enable_cache = False,)
 def training_warden():
     """Train a model"""
-    df = data_loader(table_name) 
+    df = data_loader() 
     balanced_df = data_balancer(df)
     encoded_df, mapping_dict_list = categorical_encoder(balanced_df)
     transformed_df = feature_engineer(encoded_df)

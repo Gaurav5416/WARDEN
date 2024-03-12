@@ -3,7 +3,6 @@ from zenml.integrations.evidently.steps import (
     evidently_test_step,
 )
 from zenml.integrations.evidently.tests import EvidentlyTestConfig
-from zenml.integrations.evidently.metrics import EvidentlyMetricConfig
 
 data_tester = evidently_test_step.with_options(
     
@@ -35,6 +34,3 @@ data_tester = evidently_test_step.with_options(
 
     ),
 )
-
-
-

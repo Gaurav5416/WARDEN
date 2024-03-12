@@ -1,7 +1,7 @@
 table_name = "fraud" # Passed to ingest_data
 target_col = "is_fraud" #Passed to data_splitter balance _data
 cols_to_drop = [ 
-                    'id', 
+                    # 'id', 
                     'cc_num', 
                     'merchant', 
                     'first', 

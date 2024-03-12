@@ -30,7 +30,7 @@ def train_test_splitter(
         logging.error(e)
         raise e
 
-@step(enable_cache = False)
+@step(enable_cache = True)
 def data_splitter( 
     df: pd.DataFrame,
 ) -> Tuple[

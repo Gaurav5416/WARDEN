@@ -33,8 +33,18 @@ if service is None:
 
 
 def batch():
-    st.write("Please upload your batch data")
-    uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
+    tabs = ["Upload Data", "Use Pre-existing Data"]
+    data_choice = st.sidebar.radio("Choose an option:", tabs)
+
+    uploaded_file = None  # Ensure variable is initialized
+    if data_choice == "Upload Data":
+        st.write("Please upload your batch data")
+        uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
+    
+    
+    elif data_choice == "Use Pre-existing Data":
+        uploaded_file = "data/sample_batch_data.csv"
+
     if uploaded_file is not None:
         df = pd.read_csv(uploaded_file)
         prepared_df, filtered_df = bentoml_predictor(service=service, df=df)

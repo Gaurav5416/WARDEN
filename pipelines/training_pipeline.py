@@ -20,7 +20,7 @@ def training_warden():
     encoded_df, mapping_dict_list = categorical_encoder(balanced_df)
     transformed_df = feature_engineer(encoded_df)
     batch_1, batch_2 = data_splitter(transformed_df) 
-    # sample_data_exporter() # Exports batch_2 for testing purposes
+    sample_data_exporter() # Exports batch_2 for testing purposes
     results_json, results_html = data_tester(reference_dataset = batch_1)
     notify_data_testing_results(results_json)
     X_train, X_test, y_train, y_test = train_test_splitter(batch_1)  

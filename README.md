@@ -181,7 +181,8 @@ It helps in monitoring the performance and behavior of machine learning models i
 
 We used Evidently for 2 purposes :
 
-- Conducting tests on data before training the model on it. These tests are then alerted to slack channel through slackbot. Here is the [Sample Test Suite](assets/Test_suite.html)
+- Conducting tests on data before training the model on it. These tests are then alerted to slack channel through slackbot. Here is the [Sample Test Suite](assets/Test_suite.html){:target="_blank"}
+
 
 
 ---

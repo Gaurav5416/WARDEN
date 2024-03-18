@@ -22,13 +22,13 @@ This project aims to streamline the process of filtering the fraud transactions,
     + [Reports](#reports-)
 + [Folder Structure](#folder-structure-)
 + [Major Features](#major-features-)
-    + [ZenML](#zenml-mlops-framework-)
-    + [BentoML](#bentoml-model-deployer-)
-    + [MLFlow](#mlflow-experiment-tracking-)
-    + [EvidentlyAI](#evidentlyAI-model-monitoring-)
-    + [Slackbot](#slackbot-alerts-)
-    + [Streamlit](#streamlit-app-)
-+ [Running the project](#running-the-project-)
+    + [ZenML](#zenml-mlops-framework)
+    + [BentoML](#bentoml-model-deployer)
+    + [MLFlow](#mlflow-experiment-tracking)
+    + [EvidentlyAI](#evidentlyai-model-monitoring)
+    + [Slackbot](#slackbot-alerts)
+    + [Streamlit](#streamlit-app)
++ [Running the project](#running-the-project-%EF%B8%8F)
 
 # Problem Statement ❓
 In 2022, U.S. credit card transactions totaled 54.8 billion for an average of 150.15 million per day, 6.25 million per hour, 104,274 per minute. or 1,739 per second. 

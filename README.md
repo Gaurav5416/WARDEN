@@ -190,6 +190,25 @@ We integrated slackbot in our pipeline so that the tests results are notified to
 
 ![Slack Alerts](assets/slackbot.png)
 
+## Streamlit App
+Here is the user friendly web application developed using Streamlit. It offers an intuitive interface for users to interact with the machine learning model, allowing them to input patient details and receive predictions.
+
+Users can get predictions in two ways : 
+- Real time inference --> Returns the prediction for individual transaction
+- Batch Inference --> Returns the filtered data of red flagged transactions
+
+Note :- Evidently Reports are only generated for batch inferences.
+
+- **Real Time Inference**
+
+
+    ![Real Time](assets/realtime.png)
+
+- **Batch Inference**
+
+
+    ![Batch](assets/batch.png)
+
 # Running the project 🏃‍♂️
 
 ### Prerequisites 📋

@@ -3,7 +3,7 @@ import pandas as pd
 from src.utils import mapped_spitter, get_reference_data
 from pipelines.deployment_pipeline import deploying_warden
 from steps.deployment.predictor import bentoml_predictor
-from steps.data_reporter import data_reporter
+from steps.monitoring.data_reporter import data_reporter
 from steps.deployment.prediction_service_loader import bentoml_prediction_service_loader
 from configs.deployment_config import MODEL_NAME, PIPELINE_NAME, PIPELINE_STEP_NAME
 import streamlit.components.v1 as components

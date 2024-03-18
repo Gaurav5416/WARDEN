@@ -6,7 +6,7 @@ from configs.deployment_config import MODEL_NAME, PIPELINE_NAME, PIPELINE_STEP_N
 from steps.deployment.dynamic_importer import dynamic_importer
 from steps.deployment.prediction_service_loader import bentoml_prediction_service_loader
 from steps.deployment.predictor import bentoml_predictor
-from steps.alerter import warden_slackbot
+from steps.Monitoring.alerter import warden_slackbot
 
 docker_settings = DockerSettings(required_integrations=[MLFLOW, BENTOML])
  

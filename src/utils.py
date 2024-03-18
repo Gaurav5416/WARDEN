@@ -3,7 +3,7 @@ import logging
 import pandas as pd
 from typing_extensions import Annotated
 
-from steps.alerter import warden_slackbot
+from steps.monitoring.alerter import warden_slackbot
 
 from zenml import step
 from zenml.client import Client

@@ -7,19 +7,34 @@ This project aims to streamline the process of filtering the fraud transactions,
 
 
 # Table of Contents 📑
-+ [Problem Statement](#problem-statement-) ❓
-+ [Solution Approach](#solution-approach-) 🎯
-+ [Folder Structure](#folder-structure-) 📁
-+ [Project Overview](#project-overview-) 👁️
-+ [Prerequisites](#prerequisites-) 📋
-+ [Running the project](#running-the-project-) 🏃‍♂️
-
++ [Problem Statement](#problem-statement-)
++ [Solution Approach](#solution-approach-)
++ [Project Overview](#project-overview-)
+    + [Data Collection](#data-collection-)
+    + [Data Handling](#data-handling-)
+    + [Exploratory Data Analysis](#exploratory-data-analysis-)
+    + [ETL Data Pipeline](#etl-data-pipeline-)
+    + [Data Testing](#data-testing-)
+    + [Slack Alerts](#slack-alerts-)
+    + [Model Building](#model-building-)
+    + [Model Evaluation](#model-evaluation-)
+    + [Model Deployment](#model-deployment-)
+    + [Reports](#reports-)
++ [Folder Structure](#folder-structure-)
++ [Major Features](#major-features-)
+    + [ZenML](#zenml-mlops-framework-)
+    + [BentoML](#bentoml-model-deployer-)
+    + [MLFlow](#mlflow-experiment-tracking-)
+    + [EvidentlyAI](#evidentlyAI-model-monitoring-)
+    + [Slackbot](#slackbot-alerts-)
+    + [Streamlit](#streamlit-app-)
++ [Running the project](#running-the-project-)
 
 # Problem Statement ❓
 In 2022, U.S. credit card transactions totaled 54.8 billion for an average of 150.15 million per day, 6.25 million per hour, 104,274 per minute. or 1,739 per second. 
 The firm estimated the global credit card transaction to be 21,510 per second. [link to the report ](https://capitaloneshopping.com/research/number-of-credit-card-transactions/)
 
-As the information suggests 🤔 , It is  impossible for a human to check each and every transaction let alone detect  🔍 which one is fraud or legitimate . . . 
+As the information suggests 🤔 , It is  impossible for a human to check each and every transaction let alone detect  🔍 **which one is fraud or legitimate** . . .
 
 
 
@@ -41,10 +56,10 @@ The project proposes : an **E2E(End-to-End) ML solution** in which User can inpu
 Our project consists of several stages:
 
 ## Data Collection 📁
-Due to its sensitive nature, Real world Credit card transaction data is often difficult to get hands on due to monetary and confidentiality issues, therefore we have used a [kaggle dataset](https://www.kaggle.com/datasets/kartik2112/fraud-detection) which is "synthetically generated".
+Due to its sensitive nature, Real world Credit card transaction data is often difficult to get hands on due to monetary and confidentiality issues, therefore we have used a [kaggle dataset](https://www.kaggle.com/datasets/kartik2112/fraud-detection) which is **synthetically generated**.
 
 ## Data Handling 💾
-We used ORM (Object Relational Mapping) to handle the data. We shifted the data to a Postgresql server and fetched it from the database using ORM. Please find ORM steps and code in `data/management` folder.
+We used **ORM (Object Relational Mapping)** to handle the data. We shifted the data to a Postgresql server and fetched it from the database using ORM. Please find ORM steps and code in `data/management` folder.
 
 ## Exploratory Data Analysis 🔍
 In EDA, we perfomed initial exploration of the data, familiarity with the features, Inspected the nature of the data through visualizations and various other statistical techniques such as Cross validation. We also noted down the necessary data pipeline steps we need to take for E2E pipeline. Please make sure to check our comprehensive [EDA Notebook](./notebooks/EDA.ipynb)
@@ -134,20 +149,10 @@ Reports is another tool of Monitoring system. Whenever warden recieves a batch i
 
 ```
 
-# Features 🎨
+# Major Features 🎨
 The important features and tech stack used in this project are as follows :-
 
-## ORM (Object Relational Mapping) 
- Object Relational Mapping (ORM) simplifies database interactions by allowing us to work with database entities as Python objects. In this project, We used ORM to push data to and fetch data from a PostgreSQL server, abstracting away the need for direct SQL queries and making database operations more intuitive and manageable. ORM steps and code is in `data/management` folder.
- 
- - After Running `data/management/index.py`
-![ORM Table Creation](assets/ORM_table_creation.png)
-
- - After Running `data/management/fill_table.py`
-![ORM Table Filled](assets/ORM_table_filled.png)
-
-
-## ZenML
+## ZenML MLOps Framework
 A comprehensive data science project often requires dealing with various industry tools and technologies for experiment tracking, testing, alerting, monitoring, deployment. These tools are useful but difficult to use without a centralized framework. 
 
 
@@ -164,18 +169,18 @@ streamline and automate the end-to-end machine learning lifecycle. Its flexible 
 - **The various popular tools integrated and streamlined with ZenML are here.**
 ![ZenML Dashboard](assets/zenml_stack.png)
 
-## BentoML
+## BentoML Model Deployer
 To Deploy the project we used **BentoML Model Deployer** component. BentoML creates a self sufficient Bento with all necessary components in a unified Bento. This bento then can be deployed anywhere on cloud for predictions.
 
 ![BentoML deployer](assets/deploy.png)
 
-## MLFlow
+## MLFlow Experiment Tracking
 Every run in ML cycle is an experiment. We used MLFlow for **experiment tracking** in our project. MLFlow comes with its intuitive dashboard to track experiments, logs parameters, metrics and many more ...
 
 ![MLflow Dashboard](assets/mlflow_dashboard.png)
 
 
-## EvidentlyAI
+## EvidentlyAI Model Monitoring
 EvidentlyAI is a significant component in our project's **Model Monitoring system**. 
 
 It helps in monitoring the performance and behavior of machine learning models in production, providing insights into model drift, data drift, and other relevant metrics for effective monitoring and management of deployed models.
@@ -212,7 +217,7 @@ Users can get predictions in two ways :
 
 
 
-**Make sure to check interactive auto generated evidently Reports [here](https://batch-report.netlify.app)**
+*Make sure to check interactive evidently sample Reports [here](https://batch-report.netlify.app)*
 
 # Running the project 🏃‍♂️
 

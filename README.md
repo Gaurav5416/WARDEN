@@ -9,7 +9,7 @@ This project aims to streamline the process of filtering the fraud transactions,
 # Table of Contents 📑
 + [Problem Statement](#problem-statement-)
 + [Solution Approach](#solution-approach-)
-+ [Project Overview](#project-overview-)
++ [Project Overview](#project-overview-%EF%B8%8F)
     + [Data Collection](#data-collection-)
     + [Data Handling](#data-handling-)
     + [Exploratory Data Analysis](#exploratory-data-analysis-)

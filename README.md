@@ -294,7 +294,7 @@ Please follow following steps to run the project on your machine locally . . .
 
 
 ## Contributing 🤝
-We welcome contributions from the community! Whether it's fixing a bug or adding a feature, your input is valuable. Fork the project, submit pull requests, and collaborate with us to make this project even better . . .
+We welcome contributions from the community !! Whether it's fixing a bug or adding a feature, your input is valuable. Fork the project, submit pull requests, and collaborate with us to make this project even better . . .
 
 
 ## License 📜

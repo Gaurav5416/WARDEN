@@ -53,10 +53,10 @@ In EDA, we perfomed initial exploration of the data, familiarity with the featur
 After initial exploration and identifying features that needed to be dealt with. We moved towards ETL in which we developed a ETL data pipeline involving necessary encodings and engineering to features and balancing the data through which we made the data into a format suitable for machine learning. Please find the necessary ETL steps in `steps/ETL` folder.
 
 ## Data Testing 📝
-Data testing is a part of monitoring system in WARDEN. Before passing the data to training, the data passes through data testing phase which conducts series of tests including : integrity checks, missing value handling, outlier detection, and feature distribution analysis. These tests can be aquired through dashboard anytime and are also alerted through slack. Please find the data testing code in `steps/data_tester.py` file.
+Data testing is a part of monitoring system in WARDEN. Before passing the data to training, the data passes through data testing phase which conducts series of tests including : integrity checks, missing value handling, outlier detection, and feature distribution analysis. These tests can be aquired through dashboard anytime and are also alerted through slack. Please find the data testing code in `steps/monitoring/data_tester.py` file.
 
 ## Slack Alerts 🚨
-After the testing phase, the results are alerted to team through slackbot. Streamlining the process of alerting and monitoring. Please find the alerting code in `steps/alerter.py` and `src/utils.py` files.
+After the testing phase, the results are alerted to team through slackbot. Streamlining the process of alerting and monitoring. Please find the alerting code in `steps/monitoring/alerter.py` and `src/utils.py` files.
 
 ## Model Building 🏗️
 Through EDA, after testing through various algorithms we discovered that "Adaboost" performed better than other algorithm, therefore after data testing we trained our model on Adaptive boosting.
@@ -68,7 +68,7 @@ Since its a classification problem and a problem in which False Negatives (Type 
 We deployed model using BentoML and create a user-friendly web application using Streamlit. Users can input transaction details, and the model predicts wether the transaction is fraudualent or not. This application might help for pre-screening,enabling early identification of potential fraud transactions filtering them for further analysis. Please find the deployment steps in `steps/deployment` folder.
 
 ## Reports 📑
-Reports is another tool of Monitoring system. Whenever warden recieves a batch inference request,it auto-generates reports consisting of model performance decay, data drift, target drift, and many other useful metrics with beautiful visualizations. Please find the report code in `steps/data_reporter.py` file.
+Reports is another tool of Monitoring system. Whenever warden recieves a batch inference request,it auto-generates reports consisting of model performance decay, data drift, target drift, and many other useful metrics with beautiful visualizations. Please find the report code in `steps/monitoring/data_reporter.py` file.
 
 
 
@@ -182,8 +182,7 @@ It helps in monitoring the performance and behavior of machine learning models i
 
 We used Evidently for 2 purposes :
 
-- Conducting tests on data before training the model on it. These tests are then alerted to slack channel through slackbot. Here is the [Sample Test Suite](assets/Test_suite.html){:target="_blank"}
-
+- Conducting tests on data before training the model on it. These tests are then alerted to slack channel through slackbot. Here is the [Sample Test Suite](assets/Test_suite.html)
 
 
 ---

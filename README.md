@@ -197,7 +197,7 @@ Users can get predictions in two ways :
 - Real time inference --> Returns the prediction for individual transaction
 - Batch Inference --> Returns the filtered data of red flagged transactions
 
-Note :- Evidently Reports are only generated for batch inferences.
+**Note :- Evidently Reports are only generated for batch inferences.**
 
 - **Real Time Inference**
 
@@ -208,6 +208,11 @@ Note :- Evidently Reports are only generated for batch inferences.
 
 
     ![Batch](assets/batch.png)
+
+
+
+
+**Make sure to check interactive auto generated evidently Reports [here](https://batch-report.netlify.app)**
 
 # Running the project 🏃‍♂️
 

@@ -290,4 +290,12 @@ Please follow following steps to run the project on your machine locally . . .
     streamlit run streamlit_app.py
     ```
 
+
+## Contributing 🤝
+We welcome contributions from the community! Whether it's fixing a bug or adding a feature, your input is valuable. Fork the project, submit pull requests, and collaborate with us to make this project even better . . .
+
+
+## License 📜
+This project is open-source and is licensed under the [MIT License](LICENSE). You can find the full license in the [LICENSE](LICENSE) file. 
+
 ***

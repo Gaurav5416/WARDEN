@@ -31,6 +31,8 @@ Go  check out 🔥 live  [streamlit web app](https://7i6pc4z05k67.share.zrok.io/
     + [Slackbot](#slackbot-alerts)
     + [Streamlit](#streamlit-app)
 + [Running the project](#running-the-project-%EF%B8%8F)
++ [Contributing](#contributing)
++ [License](#license)
 
 # Problem Statement ❓
 In 2022, U.S. credit card transactions totaled 54.8 billion for an average of 150.15 million per day, 6.25 million per hour, 104,274 per minute. or 1,739 per second. 

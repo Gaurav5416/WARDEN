@@ -181,12 +181,14 @@ EvidentlyAI is a significant component in our project's **Model Monitoring syste
 It helps in monitoring the performance and behavior of machine learning models in production, providing insights into model drift, data drift, and other relevant metrics for effective monitoring and management of deployed models.
 
 We used Evidently for 2 purposes :
+- Generating a comprehensive report after batch inference for various evaluations like model drift, data drift, classification performance with beautiful and interactive visualizations. Here is a [Sample Report](https://batch-report.netlify.app)
 
-- Conducting tests on data before training the model on it. These tests are then alerted to slack channel through slackbot. Here is the [Sample Test Suite](assets/Test_suite.html)
+- Conducting tests on data before training the model on it. These tests are then alerted to slack channel through slackbot. Here is the [Sample Test Suite](https://test-suite.netlify.app)
 
+## Slackbot Alerts
+We integrated slackbot in our pipeline so that the tests results are notified to our team directly through slackbot in our channel. Slack alerters is another major part of our Alerting and Monitoring System.
 
----
-
+![Slack Alerts](assets/slackbot.png)
 
 # Running the project 🏃‍♂️
 

@@ -1,5 +1,5 @@
 # 🛡️ WARDEN : Credit Card Fraud Detector 
-Presenting ✨ the almighty **WARDEN** 🛡️. Warden is a End to End MLOps project designed for credit card fraud detection. Leveraging advance machine learning algorithms, MLOps best practices. Warden incorporates Alerting and monitoring system with robust model development and deployment. 
+Presenting ✨ the almighty **WARDEN** 🛡️. Warden is a End-to-End MLOps project designed for credit card fraud detection. Leveraging advance machine learning algorithms, MLOps best practices. Warden incorporates Alerting and monitoring system with robust model development and deployment. 
 
 With its intuitive Streamlit interface, Warden offers both batch and real-time inference, accompanied by comprehensive reports. Built-in monitoring guarantees continuous data quality assessment, making Warden a formidable guardian against fraudulent transactions.
 

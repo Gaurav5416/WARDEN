@@ -5,9 +5,6 @@ With its intuitive Streamlit interface, Warden offers both batch and real-time i
 
 This project aims to streamline the process of filtering the fraud transactions, providing insights, comprehensive reports and predictions to drive impactful business decisions! 📊✨
 
-Go  check out 🔥 live  [streamlit web app](https://7i6pc4z05k67.share.zrok.io/) now  . . . .
-
-
 # Table of Contents 📑
 + [Problem Statement](#problem-statement-)
 + [Solution Approach](#solution-approach-)

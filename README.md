@@ -64,7 +64,7 @@ Due to its sensitive nature, Real world Credit card transaction data is often di
 We used **ORM (Object Relational Mapping)** to handle the data. We shifted the data to a Postgresql server and fetched it from the database using ORM. Please find ORM steps and code in `data/management` folder.
 
 ## Exploratory Data Analysis 🔍
-In EDA, we perfomed initial exploration of the data, familiarity with the features, Inspected the nature of the data through visualizations and various other statistical techniques such as Cross validation. We also noted down the necessary data pipeline steps we need to take for E2E pipeline. Please make sure to check our comprehensive [EDA Notebook](./notebooks/EDA.ipynb)
+In EDA, we perfomed initial exploration of the data, familiarity with the features, Inspected the nature of the data through visualizations and various other statistical techniques such as Cross validation. We also noted down the necessary data pipeline steps we need to take for E2E pipeline.
 
 ## ETL Data Pipeline 🚚
 After initial exploration and identifying features that needed to be dealt with. We moved towards ETL in which we developed a ETL data pipeline involving necessary encodings and engineering to features and balancing the data through which we made the data into a format suitable for machine learning. Please find the necessary ETL steps in `steps/ETL` folder.
@@ -198,7 +198,7 @@ We integrated slackbot in our pipeline so that the tests results are notified to
 ![Slack Alerts](assets/slackbot.png)
 
 ## Streamlit App
-Here is the user friendly [web application](https://7i6pc4z05k67.share.zrok.io/)  developed using Streamlit. It offers an intuitive interface for users to interact with the machine learning model, allowing them to input transaction details and receive predictions.
+Here is the user friendly web application developed using Streamlit. It offers an intuitive interface for users to interact with the machine learning model, allowing them to input transaction details and receive predictions.
 
 Users can get predictions in two ways : 
 - Real time inference --> Returns the prediction for individual transaction
